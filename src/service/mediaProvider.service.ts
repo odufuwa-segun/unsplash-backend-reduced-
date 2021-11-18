@@ -6,12 +6,18 @@ const unsplashCred = {
         secret_key: ""
 }
 
-import nodeFetch from 'node-fetch';
+import * as nodeFetch from 'node-fetch'
+
+declare global {
+  var fetch: typeof nodeFetch.default;
+  type RequestInit = nodeFetch.RequestInit;
+  type Response = nodeFetch.Response;
+}
 
 
 const unsplashClient = createApi({
 	accessKey: unsplashCred.access_key,
-	fetch: nodeFetch,
+	fetch: nodeFetch.default,
 });
 
 export const findUnsplashPhotos = async (query: string, page: number, perPage: number) => {
