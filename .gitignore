@@ -1,0 +1,13 @@
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+.cache/
+.env
+.env.local
+.env.stage
+ormconfig.json
+.DS_Store
+src/consoleScripts/subAccount.ts
