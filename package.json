@@ -19,6 +19,7 @@
   "dependencies": {
     "@giphy/js-fetch-api": "^4.1.2",
     "@sentry/node": "^6.2.3",
+    "@types/node-fetch": "2",
     "aws-sdk": "^2.874.0",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
